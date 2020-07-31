@@ -13,12 +13,15 @@ public class CameraTransition : MonoBehaviour
     public bool startFounting = false;
     public Transform target;
 
+    float distance;
+
     private void Start()
     {
         cT = this;
     }
     void Update()
     {
+        distance = Vector3.Distance(transform.position, target.position);
         if(sp.childs.Count == GameManager.gM.sprinklers.Count)
         {
             StartCoroutine(transition(1));
@@ -29,7 +32,7 @@ public class CameraTransition : MonoBehaviour
         yield return new WaitForSeconds(t);
         transform.position = Vector3.Lerp(transform.position, target.position, speedLerp * Time.deltaTime);
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, speedRotation * Time.deltaTime);
-        if (transform.rotation == target.rotation && !startFounting)
+        if (distance<=0.15f)
         {
             startFounting = true;
         }
