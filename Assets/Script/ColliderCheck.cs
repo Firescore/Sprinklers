@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class ColliderCheck : MonoBehaviour
 {
+    public dragAndMove dam;
     public static ColliderCheck CC;
     public GameObject rediusChecker1;
     public GameObject rediusChecker2;
     public float rediusSize = 1;
+    bool isAdded = false;
     Rigidbody rb;
     private void Start()
     {
@@ -16,13 +18,12 @@ public class ColliderCheck : MonoBehaviour
         rediusChecker1.SetActive(false);
         rediusChecker2.SetActive(false);
     }
-    bool isAdded = false;
 
     private void Update()
     {
         rediusChecker1.transform.localScale = new Vector3(rediusSize / 2, rediusSize, rediusSize / 2);
         rediusChecker2.transform.localScale = new Vector3(rediusSize, rediusSize, rediusSize);
-        if (CameraTransition.cT.startFounting)
+        if (dam.isConneced)
         {
             rediusChecker2.SetActive(false);
         }

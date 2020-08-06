@@ -10,5 +10,4 @@ public class connectionPoint : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, redius);
     }
-
 }

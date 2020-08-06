@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class RotationScript : MonoBehaviour
 {
-    public float speed;
-    public float speed2;
+    public float speedX;
+    public float speedY;
+    public float speedZ;
     float angle;
     // Start is called before the first frame update
     void Start()
@@ -16,15 +17,20 @@ public class RotationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (speed > 0) 
+        if (speedY > 0) 
         {
-            angle += Time.deltaTime * speed;
+            angle += Time.deltaTime * speedY;
             transform.localRotation = Quaternion.Euler(0, angle, 0);
         }
-        if (speed2 > 0 )
+        if (speedZ > 0 )
         {
-            angle += Time.deltaTime * speed2;
+            angle += Time.deltaTime * speedZ;
             transform.localRotation = Quaternion.Euler(90,0, angle);
+        }
+        if (speedX > 0 )
+        {
+            angle += Time.deltaTime * speedX;
+            transform.localRotation = Quaternion.Euler(angle, 0, 0);
         }
         
     }
