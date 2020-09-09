@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ColliderCheck : MonoBehaviour
 {
-    public dragAndMove dam;
+    public dragAndMovePipe dam;
     public static ColliderCheck CC;
     public GameObject rediusChecker1;
     public GameObject rediusChecker2;
@@ -35,7 +35,9 @@ public class ColliderCheck : MonoBehaviour
         {
             rb.useGravity = false;
             rb.isKinematic = true;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
             gameObject.GetComponent<DragDrop>().enabled = false;
+            GameManager.gM.getNumber += 1;
             isAdded = true;
         }
     }

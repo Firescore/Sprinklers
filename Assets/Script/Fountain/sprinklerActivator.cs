@@ -8,6 +8,8 @@ public class sprinklerActivator : MonoBehaviour
     public GameObject[] sprinklers;
     public Animator anime;
     public RotationScript rs;
+
+    bool isFountainActivated = false;   
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +23,13 @@ public class sprinklerActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dam.isConneced)
+        if (GameManager.gM.sprinklers.Count >=3 && !isFountainActivated)
         {
             sprinklers[0].SetActive(true);
             sprinklers[1].SetActive(true);
             sprinklers[2].SetActive(true);
             rs.enabled = true;
+            isFountainActivated = true;
         }
     }
 }

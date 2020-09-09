@@ -1,51 +1,88 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager gM;
     public List<GameObject> sprinklers = new List<GameObject>();
-    public Slider sd;
-    float a = 0;
-    public List<GameObject> stk = new List<GameObject>();
-    public List<GameObject> stkSparcles = new List<GameObject>();
-    public List<Animator> ani = new List<Animator>();
+
+    [HideInInspector]
+    public int getNumber = 0;
+
+    public GameObject tree, flower, plateform, Ground;
+    public float delayInDesablingGround = 1;
+
+    public int progressBarFillLimit = 100;
+    public int speed = 1;
+    public GameObject[] ground_data;
     void Start()
     {
         gM = this;
-        stk[0].SetActive(false);
-        stk[1].SetActive(false);
-        stk[2].SetActive(false);
-        stkSparcles[0].SetActive(false);
-        stkSparcles[1].SetActive(false);
-        stkSparcles[2].SetActive(false);
+        tree.SetActive(false);
+        flower.SetActive(false);
+        plateform.SetActive(true);
+        Ground.SetActive(true);
+        plateform.GetComponent<plateform>().enabled = false;
+        for (int i = 0; i <= ground_data.Length-1; i++)
+        {
+            ground_data[i].SetActive(false);
+        }
+        if (levelManager.levelMan != null)
+        {
+            levelManager.levelMan.slider.value = 0;
+            for (int i = 0; i <= levelManager.levelMan.star.Length - 1; i++)
+            {
+                levelManager.levelMan.star[i].SetActive(false);
+            }
+        }
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(a<=1)
-            a += 0.01f;
-        sd.value = a;
-        if(sd.value >= 0.3f)
+        starShow();
+        if (sprinklers.Count >= 3 )
         {
-            stk[0].SetActive(true);
-            ani[0].SetBool("Activate", true);
-            stkSparcles[0].SetActive(true);
+            tree.SetActive(true);
+            flower.SetActive(true);
+            if (levelManager.levelMan.slider.value <= progressBarFillLimit)
+            {
+                levelManager.levelMan.slider.value += speed;
+                levelManager.levelMan.text.text = levelManager.levelMan.slider.value + "%".ToString();
+            }
+            for (int i = 0; i <= ground_data.Length-1; i++)
+            {
+                ground_data[i].SetActive(true);
+
+            }
+            StartCoroutine(desableGround(delayInDesablingGround));
+
         }
-        if (sd.value >= 0.6f)
+        if (getNumber >= 3)
         {
-            stk[1].SetActive(true);
-            ani[1].SetBool("Activate", true);
-            stkSparcles[1].SetActive(true);
+            plateform.GetComponent<plateform>().enabled = true;
         }
-        if (sd.value >= 0.9f)
+    }
+
+    void starShow()
+    {
+        if(levelManager.levelMan.slider.value >= 16)
         {
-            stk[2].SetActive(true);
-            ani[2].SetBool("Activate", true);
-            stkSparcles[2].SetActive(true);
+            levelManager.levelMan.star[0].SetActive(true);
         }
+        if(levelManager.levelMan.slider.value >= 50)
+        {
+            levelManager.levelMan.star[1].SetActive(true);
+        }
+        if(levelManager.levelMan.slider.value >= 90)
+        {
+            levelManager.levelMan.star[2].SetActive(true);
+        }
+    }
+    IEnumerator desableGround(float t)
+    {
+        yield return new WaitForSeconds(t);
+        Ground.SetActive(false);
     }
 }

@@ -24,7 +24,7 @@ public class CameraTransition : MonoBehaviour
         distance = Vector3.Distance(transform.position, target.position);
         if(sp.childs.Count == GameManager.gM.sprinklers.Count)
         {
-            StartCoroutine(transition(1));
+            StartCoroutine(transition(0.3f));
         }
     }
     IEnumerator transition(float t)
