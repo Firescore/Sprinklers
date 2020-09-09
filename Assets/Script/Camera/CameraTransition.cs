@@ -15,9 +15,11 @@ public class CameraTransition : MonoBehaviour
 
     float distance;
 
+    public float a;
     private void Start()
     {
         cT = this;
+        a = sp.childs.Count;
     }
     void Update()
     {

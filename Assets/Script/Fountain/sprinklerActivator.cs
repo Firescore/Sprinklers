@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class sprinklerActivator : MonoBehaviour
 {
-    public dragAndMove dam;
+    public dragAndMovePipe damP;
     public GameObject[] sprinklers;
     public Animator anime;
     public RotationScript rs;
@@ -23,7 +23,7 @@ public class sprinklerActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.gM.sprinklers.Count >=3 && !isFountainActivated)
+        if (GameManager.gM.sprinklers.Count >=3 && !isFountainActivated && !damP.limitCrossed)
         {
             sprinklers[0].SetActive(true);
             sprinklers[1].SetActive(true);

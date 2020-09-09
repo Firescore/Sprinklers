@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class dragAndMovePipe : MonoBehaviour
 {
+    public static dragAndMovePipe damP;
     Rigidbody rb;
     private Vector3 mOffset;
     private float mZCoord;
@@ -14,9 +15,10 @@ public class dragAndMovePipe : MonoBehaviour
     public pipeScript ps;
     public float dist;
     public bool isMoving = false;
-    public bool isConneced = false, particleSpwan = false;
+    public bool isConneced = false, particleSpwan = false, limitCrossed = false;
     private void Start()
     {
+        damP = this;
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
 
@@ -31,7 +33,7 @@ public class dragAndMovePipe : MonoBehaviour
             rb.useGravity = false;
         }
         dist = Vector3.Distance(transform.position, target.position);
-        if (dist <= 0.1f && GameManager.gM.getNumber >=3 )
+        if (dist <= 0.1f && GameManager.gM.getNumber >=3)
         {
             transform.position = target.position;
             if (!particleSpwan)
@@ -39,6 +41,7 @@ public class dragAndMovePipe : MonoBehaviour
                 Destroy(Instantiate(particle,target.position,Quaternion.identity), 1);
                 particleSpwan = true;
             }
+
             isConneced = true;
             rb.useGravity = false;
             rb.isKinematic = true;
@@ -48,6 +51,7 @@ public class dragAndMovePipe : MonoBehaviour
                 isAdded = true;
             }
         }
+
     }
 
     void OnMouseDown()
@@ -79,4 +83,11 @@ public class dragAndMovePipe : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mousePoint);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("limit"))
+        {
+            limitCrossed = true;
+        }
+    }
 }

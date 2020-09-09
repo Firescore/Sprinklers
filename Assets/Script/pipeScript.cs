@@ -5,14 +5,23 @@ using UnityEngine;
 public class pipeScript : MonoBehaviour
 {
     public GameObject start, end;
+    public dragAndMovePipe damPT;
+
     public float distance = 0;
     public float limit = 1.2f;
     public bool stop = false;
+
+    Rigidbody endRB;
+
+    private void Start()
+    {
+        endRB = end.GetComponent<Rigidbody>();
+    }
     private void Update()
     {
 
         distance = Vector3.Distance(start.transform.position, end.transform.position);
-        if (distance >= limit + 0.3f)
+        if (distance >= limit + 0.22f)
         {
             stop = true;
         }
@@ -23,8 +32,13 @@ public class pipeScript : MonoBehaviour
 
         if(distance >= limit + 0.2f)
         {
-            start.GetComponent<Rigidbody>().useGravity = true;
-            start.GetComponent<Rigidbody>().isKinematic = false;
+            endRB.useGravity = true;
+            endRB.isKinematic = false;
+        }
+        else if (damPT.limitCrossed)
+        {
+            endRB.useGravity = true;
+            endRB.isKinematic = false;
         }
     }
 }
