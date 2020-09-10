@@ -24,7 +24,7 @@ public class CameraTransition : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(transform.position, target.position);
-        if(sp.childs.Count == GameManager.gM.sprinklers.Count)
+        if(/*sp.childs.Count == GameManager.gM.sprinklers.Count*/ GameManager.gM.readyToFountain)
         {
             StartCoroutine(transition(0.3f));
         }

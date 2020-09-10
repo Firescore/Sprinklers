@@ -87,7 +87,15 @@ public class GameManager : MonoBehaviour
         Ground.SetActive(false);
     }
 
+    public bool readyToFountain = false;
     void startFountain()
     {
+        if(pipe[0].GetComponent<endPipeDragAndDrop>().isConnected && pipe[2].GetComponent<endPipeDragAndDrop>().isConnected && pipe[4].GetComponent<endPipeDragAndDrop>().isConnected)
+        {
+            if (pipe[1].GetComponent<dragAndMovePipe>().isConneced && pipe[3].GetComponent<dragAndMovePipe>().isConneced && pipe[5].GetComponent<dragAndMovePipe>().isConneced)
+            {
+                readyToFountain = true;
+            }
+        }
     }
 }
