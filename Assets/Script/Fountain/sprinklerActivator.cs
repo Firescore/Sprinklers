@@ -23,7 +23,7 @@ public class sprinklerActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.gM.sprinklers.Count >=3 && !isFountainActivated && !damP.limitCrossed)
+        if (GameManager.gM.readyToFountain && !isFountainActivated && !damP.limitCrossed)
         {
             sprinklers[0].SetActive(true);
             sprinklers[1].SetActive(true);

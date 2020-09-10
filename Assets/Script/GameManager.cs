@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         starShow();
-        if (sprinklers.Count >= 3 )
+        if (readyToFountain)
         {
             tree.SetActive(true);
             flower.SetActive(true);
@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         {
             plateform.GetComponent<plateform>().enabled = true;
         }
+        startFountain();
     }
 
     void starShow()
