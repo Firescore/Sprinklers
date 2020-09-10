@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager gM;
     public List<GameObject> sprinklers = new List<GameObject>();
 
+    public GameObject[] pipe;
     [HideInInspector]
     public int getNumber = 0;
 
@@ -84,5 +85,9 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(t);
         Ground.SetActive(false);
+    }
+
+    void startFountain()
+    {
     }
 }

@@ -40,5 +40,10 @@ public class pipeScript : MonoBehaviour
             endRB.useGravity = true;
             endRB.isKinematic = false;
         }
+        if (endPipeDragAndDrop.ePDaD.isConnected)
+        {
+            endRB.useGravity = false;
+            endRB.isKinematic = true;
+        }
     }
 }

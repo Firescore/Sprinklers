@@ -26,10 +26,8 @@ public class dragAndMovePipe : MonoBehaviour
     private void Update()
     {
         if (isMoving )
-        {
-            if(!ps.stop)
-                transform.position = GetMouseAsWorldPoint() + mOffset;
-
+        { 
+            transform.position = GetMouseAsWorldPoint() + mOffset;
             rb.useGravity = false;
         }
         dist = Vector3.Distance(transform.position, target.position);
