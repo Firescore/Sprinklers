@@ -27,7 +27,7 @@ public class ColliderCheck : MonoBehaviour
         {
             rediusChecker2.SetActive(false);
         }
-    
+
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -43,7 +43,7 @@ public class ColliderCheck : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if(!isAdded)
+        if (!isAdded)
             rediusChecker1.SetActive(true);
     }
     private void OnMouseUp()

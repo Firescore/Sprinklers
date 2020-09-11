@@ -6,6 +6,7 @@ using UnityEngine;
 public class endPipeDragAndDrop : MonoBehaviour
 {
     public static endPipeDragAndDrop ePDaD;
+    public pipeData pD;
 
     Rigidbody rb;
     private Vector3 mOffset;
@@ -15,6 +16,7 @@ public class endPipeDragAndDrop : MonoBehaviour
     public bool isMoving = false, isConnected = false;
     private void Start()
     {
+        isConnected = true;
         ePDaD = this;
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
@@ -26,9 +28,9 @@ public class endPipeDragAndDrop : MonoBehaviour
         {
             transform.position = GetMouseAsWorldPoint() + mOffset;
             rb.useGravity = false;
-            pipeConnection();
         }
-        
+
+
     }
 
     [SerializeField]
@@ -36,6 +38,7 @@ public class endPipeDragAndDrop : MonoBehaviour
     void pipeConnection()
     {
         dis = Vector3.Distance(transform.position, pipeCoonnect.transform.position);
+
         if (dis < 0.05f)
         {
             isConnected = true;
@@ -44,6 +47,8 @@ public class endPipeDragAndDrop : MonoBehaviour
         {
             isConnected = false;
         }
+
+
     }
 
     void OnMouseDown()

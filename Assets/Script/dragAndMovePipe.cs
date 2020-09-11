@@ -12,7 +12,7 @@ public class dragAndMovePipe : MonoBehaviour
 
     public GameObject particle;
     public Transform target;
-    public pipeScript ps;
+    public pipeData ps;
     public float dist;
     public bool isMoving = false;
     public bool isConneced = false, particleSpwan = false, limitCrossed = false;
