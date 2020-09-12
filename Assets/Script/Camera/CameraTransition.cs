@@ -10,7 +10,7 @@ public class CameraTransition : MonoBehaviour
 
     public float speedLerp = 5;
     public float speedRotation = 50;
-    public bool startFounting = false;
+    public bool startFounting = false, cameraAtNewPos = false;
     public Transform target;
 
     float distance;
@@ -24,9 +24,14 @@ public class CameraTransition : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(transform.position, target.position);
-        if(/*sp.childs.Count == GameManager.gM.sprinklers.Count*/ GameManager.gM.readyToFountain)
+        if (GameManager.gM.readyToFountain)
         {
             StartCoroutine(transition(0.3f));
+        }
+        if (distance <= 0.1f && !cameraAtNewPos)
+        {
+            Debug.Log("Hey");
+            cameraAtNewPos = true;
         }
     }
     IEnumerator transition(float t)
@@ -34,7 +39,7 @@ public class CameraTransition : MonoBehaviour
         yield return new WaitForSeconds(t);
         transform.position = Vector3.Lerp(transform.position, target.position, speedLerp * Time.deltaTime);
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, speedRotation * Time.deltaTime);
-        if (distance<=0.15f)
+        if (distance <= 0.15f)
         {
             startFounting = true;
         }

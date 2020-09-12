@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
     public bool readyToFountain = false;
     void startFountain()
     {
-        if (pipe[0].GetComponent<endPipeDragAndDrop>().isConnected && pipe[2].GetComponent<endPipeDragAndDrop>().isConnected && pipe[4].GetComponent<endPipeDragAndDrop>().isConnected)
+        if (!pipe[0].GetComponent<pipeData>().disconnected && !pipe[2].GetComponent<pipeData>().disconnected && !pipe[4].GetComponent<pipeData>().disconnected)
         {
             if (pipe[1].GetComponent<dragAndMovePipe>().isConneced && pipe[3].GetComponent<dragAndMovePipe>().isConneced && pipe[5].GetComponent<dragAndMovePipe>().isConneced)
             {

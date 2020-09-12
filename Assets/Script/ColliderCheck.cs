@@ -23,6 +23,7 @@ public class ColliderCheck : MonoBehaviour
     {
         rediusChecker1.transform.localScale = new Vector3(rediusSize / 2, rediusSize, rediusSize / 2);
         rediusChecker2.transform.localScale = new Vector3(rediusSize, rediusSize, rediusSize);
+
         if (dam.isConneced)
         {
             rediusChecker2.SetActive(false);

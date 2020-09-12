@@ -9,7 +9,7 @@ public class pipeData : MonoBehaviour
 
     public float distance = 0;
     public float limit = 1.2f;
-    public bool stop = false;
+    public bool disconnected = false;
 
     Rigidbody endRB;
 
@@ -23,14 +23,10 @@ public class pipeData : MonoBehaviour
         distance = Vector3.Distance(start.transform.position, end.transform.position);
         if (distance >= limit + 0.22f)
         {
-            stop = true;
-        }
-        else
-        {
-            stop = false;
+            disconnected = true;
         }
 
-        if(distance >= limit + 0.2f)
+        if (distance >= limit + 0.2f)
         {
             endRB.useGravity = true;
             endRB.isKinematic = false;
@@ -39,11 +35,6 @@ public class pipeData : MonoBehaviour
         {
             endRB.useGravity = true;
             endRB.isKinematic = false;
-        }
-        if (endPipeDragAndDrop.ePDaD.isConnected)
-        {
-            endRB.useGravity = false;
-            endRB.isKinematic = true;
         }
     }
 }
