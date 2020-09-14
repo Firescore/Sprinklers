@@ -167,17 +167,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.5833333
         value: {x: -90, y: 0, z: 0}
-        inSlope: {x: -899.9999, y: 0, z: 0}
-        outSlope: {x: -899.9999, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.6666667
-        value: {x: -150, y: 0, z: 0}
-        inSlope: {x: -539.99994, y: 0, z: 0}
-        outSlope: {x: -539.99994, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -2382,6 +2382,8 @@ AnimationClip:
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.25
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (60)
     classID: 23
@@ -2390,7 +2392,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (61)
     classID: 23
@@ -2399,7 +2401,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (71)
     classID: 23
@@ -2408,7 +2410,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (59)
     classID: 23
@@ -2417,7 +2419,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (49)
     classID: 23
@@ -2426,7 +2428,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (50)
     classID: 23
@@ -2435,7 +2437,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (72)
     classID: 23
@@ -2444,7 +2446,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (70)
     classID: 23
@@ -2453,13 +2455,15 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 0.6666667
-      value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     attribute: m_Materials.Array.data[0]
     path: Cube (48)
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -2470,6 +2474,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2478,6 +2484,8 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -2488,6 +2496,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2496,6 +2506,8 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -2506,6 +2518,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2514,6 +2528,8 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -2524,6 +2540,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2532,6 +2550,8 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -2542,6 +2562,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2550,6 +2572,8 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -2560,6 +2584,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2568,6 +2594,8 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -2578,6 +2606,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2587,6 +2617,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     attribute: m_Materials.Array.data[0]
@@ -2595,6 +2627,8 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
+      value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - time: 0.6666667
       value: {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - time: 1.1666666
       value: {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
@@ -3131,51 +3165,68 @@ AnimationClip:
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
-    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
+    - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
+    - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 3a1d83ab466ac1246a8abb2608dbffe2, type: 2}
     - {fileID: 2100000, guid: 65633cc759597aa4a96773151301fedb, type: 2}
   m_AnimationClipSettings:
@@ -4489,17 +4540,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.5833333
         value: -90
-        inSlope: -899.9999
-        outSlope: -899.9999
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: -150
-        inSlope: -539.99994
-        outSlope: -539.99994
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -10724,66 +10775,6 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (61)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (61)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (61)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (49)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (49)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (49)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: Cube (59)
     classID: 4
@@ -10844,8 +10835,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (50)
+    attribute: m_LocalEulerAngles.z
+    path: Cube (58)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10855,7 +10846,17 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cube (50)
+    path: Cube (58)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (58)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10865,17 +10866,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (50)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (72)
+    path: Cube (47)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10885,7 +10876,17 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cube (72)
+    path: Cube (47)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (47)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10895,17 +10896,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (72)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (70)
+    path: Cube (49)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10915,17 +10906,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cube (70)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (70)
+    path: Cube (49)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10935,17 +10916,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cube (71)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (71)
+    path: Cube (49)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10964,18 +10935,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (39)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cube (39)
+    path: Cube (71)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -10985,67 +10946,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cube (39)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (38)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (38)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (38)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (37)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (37)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (37)
+    path: Cube (71)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11085,7 +10986,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (58)
+    path: Cube (70)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11095,7 +10996,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cube (58)
+    path: Cube (70)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11105,27 +11006,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cube (58)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (47)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (47)
+    path: Cube (70)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11135,17 +11016,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (47)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (82)
+    path: Cube (38)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11155,7 +11026,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cube (82)
+    path: Cube (38)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11165,7 +11036,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cube (82)
+    path: Cube (38)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11175,7 +11046,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (81)
+    path: Cube (37)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11185,7 +11056,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cube (81)
+    path: Cube (37)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11195,7 +11066,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cube (81)
+    path: Cube (37)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11205,66 +11076,6 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (83)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (83)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (83)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (80)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (80)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (80)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
     path: Cube (36)
     classID: 4
     script: {fileID: 0}
@@ -11284,68 +11095,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: Cube (36)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (40)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (40)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (40)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cube (73)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (73)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (73)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11385,36 +11136,6 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (84)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cube (84)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cube (84)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
     path: Cube (51)
     classID: 4
     script: {fileID: 0}
@@ -11425,6 +11146,16 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
+    path: Cube (51)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
     path: Cube (51)
     classID: 4
     script: {fileID: 0}
@@ -11435,7 +11166,327 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cube (51)
+    path: Cube (40)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (40)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (40)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (81)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (81)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (81)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (80)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (80)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (80)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (82)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (82)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (82)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (73)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (73)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (73)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (50)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (50)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (50)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (39)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (39)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (39)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (72)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (72)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (72)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (61)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (61)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (61)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (83)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (83)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (83)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cube (84)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cube (84)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Cube (84)
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0

@@ -19,6 +19,11 @@ public class levelManager : MonoBehaviour
     {
         levelMan = this;
         Application.targetFrameRate = 60;
+        slider.value = 0;
+        for(int i = 0; i < star.Length - 1; i++)
+        {
+            star[i].SetActive(false);
+        }
     }
 
 }
