@@ -25,19 +25,19 @@ public class GameManager : MonoBehaviour
         plateform.SetActive(true);
         Ground.SetActive(true);
         plateform.GetComponent<plateform>().enabled = false;
-        for (int i = 0; i <= ground_data.Length-1; i++)
+        for (int i = 0; i <= ground_data.Length - 1; i++)
         {
             ground_data[i].SetActive(false);
         }
         if (levelManager.levelMan != null)
         {
-            levelManager.levelMan.slider.value = 0;
+            //levelManager.levelMan.slider.value = 0;
             for (int i = 0; i <= levelManager.levelMan.star.Length - 1; i++)
             {
                 levelManager.levelMan.star[i].SetActive(false);
             }
         }
-        
+
     }
 
     void Update()
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
                 levelManager.levelMan.slider.value += speed;
                 levelManager.levelMan.text.text = levelManager.levelMan.slider.value + "%".ToString();
             }
-            for (int i = 0; i <= ground_data.Length-1; i++)
+            for (int i = 0; i <= ground_data.Length - 1; i++)
             {
                 ground_data[i].SetActive(true);
 
@@ -69,15 +69,15 @@ public class GameManager : MonoBehaviour
 
     void starShow()
     {
-        if(levelManager.levelMan.slider.value >= 16)
+        if (levelManager.levelMan.slider.value >= 16)
         {
             levelManager.levelMan.star[0].SetActive(true);
         }
-        if(levelManager.levelMan.slider.value >= 50)
+        if (levelManager.levelMan.slider.value >= 50)
         {
             levelManager.levelMan.star[1].SetActive(true);
         }
-        if(levelManager.levelMan.slider.value >= 90)
+        if (levelManager.levelMan.slider.value >= 90)
         {
             levelManager.levelMan.star[2].SetActive(true);
         }
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
     public bool readyToFountain = false;
     void startFountain()
     {
-        if(pipe[0].GetComponent<endPipeDragAndDrop>().isConnected && pipe[2].GetComponent<endPipeDragAndDrop>().isConnected && pipe[4].GetComponent<endPipeDragAndDrop>().isConnected)
+        if (!pipe[0].GetComponent<pipeData>().disconnected && !pipe[2].GetComponent<pipeData>().disconnected && !pipe[4].GetComponent<pipeData>().disconnected)
         {
             if (pipe[1].GetComponent<dragAndMovePipe>().isConneced && pipe[3].GetComponent<dragAndMovePipe>().isConneced && pipe[5].GetComponent<dragAndMovePipe>().isConneced)
             {

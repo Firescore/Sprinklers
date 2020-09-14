@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f9a88a677393b44b5fd4a474b72fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dam: {fileID: 0}
+  dam: {fileID: 5604507165905151377, guid: e81f540d24dfe334d8c63d500127e639, type: 3}
   rediusChecker1: {fileID: 7968183835259974039}
   rediusChecker2: {fileID: 7968183836232391033}
   rediusSize: 1
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ced15688d488749b03eb2363ec2607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dam: {fileID: 0}
+  damP: {fileID: 5604507165905151377, guid: e81f540d24dfe334d8c63d500127e639, type: 3}
   sprinklers:
   - {fileID: 1929569085141549958}
   - {fileID: 1393461226482778235}

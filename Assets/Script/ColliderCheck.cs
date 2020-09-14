@@ -23,11 +23,12 @@ public class ColliderCheck : MonoBehaviour
     {
         rediusChecker1.transform.localScale = new Vector3(rediusSize / 2, rediusSize, rediusSize / 2);
         rediusChecker2.transform.localScale = new Vector3(rediusSize, rediusSize, rediusSize);
+
         if (dam.isConneced)
         {
             rediusChecker2.SetActive(false);
         }
-    
+
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -43,7 +44,7 @@ public class ColliderCheck : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if(!isAdded)
+        if (!isAdded)
             rediusChecker1.SetActive(true);
     }
     private void OnMouseUp()
